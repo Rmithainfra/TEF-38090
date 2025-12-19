@@ -75,9 +75,9 @@ var viewer = pannellum.viewer('panorama', {
       hfov: 200,
       haov: 360,
       vaov: 86,
-      yaw: 0,
+      yaw: 14,
       compass: true,
-      northOffset: 0,
+      northOffset: -14,
       minPitch: -25,
       maxPitch: 25
     },
@@ -88,9 +88,9 @@ var viewer = pannellum.viewer('panorama', {
       hfov: 200,
       haov: 360,
       vaov: 86,
-      yaw: 0,
+      yaw: 16,
       compass: true,
-      northOffset: 0,
+      northOffset: -16,
       minPitch: -25,
       maxPitch: 25
     },
@@ -101,9 +101,9 @@ var viewer = pannellum.viewer('panorama', {
       hfov: 200,
       haov: 360,
       vaov: 86,
-      yaw: 0,
+      yaw: 12,
       compass: true,
-      northOffset: 0,
+      northOffset: -12,
       minPitch: -25,
       maxPitch: 25
     },
@@ -112,9 +112,9 @@ var viewer = pannellum.viewer('panorama', {
       type: "equirectangular",
       panorama: "3-360.jpg",
       hfov: 200,
-      yaw: 0,
+      yaw: 35,
       compass: true,
-      northOffset: 0
+      northOffset: -35
     },
  
     "image-10": {
@@ -123,9 +123,9 @@ var viewer = pannellum.viewer('panorama', {
       hfov: 200,
       haov: 360,
       vaov: 86,
-      yaw: 0,
+      yaw: 25,
       compass: true,
-      northOffset: 0,
+      northOffset: -25,
       minPitch: -25,
       maxPitch: 25
     },
@@ -136,9 +136,9 @@ var viewer = pannellum.viewer('panorama', {
       hfov: 200,
       haov: 360,
       vaov: 86,
-      yaw: 0,
+      yaw: 24,
       compass: true,
-      northOffset: 0,
+      northOffset: -24,
       minPitch: -25,
       maxPitch: 25
     },
@@ -149,9 +149,9 @@ var viewer = pannellum.viewer('panorama', {
       hfov: 200,
       haov: 360,
       vaov: 86,
-      yaw: 0,
+      yaw: 24,
       compass: true,
-      northOffset: 0,
+      northOffset: -24,
       minPitch: -25,
       maxPitch: 25
     }
@@ -264,13 +264,13 @@ function updateDegreeScale() {
     "image-3": -6,
     "image-4": -6,
     "image-5": 0,
-    "image-6": 0,
-    "image-7": 0,
-    "image-8": 0,
-    "image-9": 0,
-    "image-10": 0,
-    "image-11": 0,
-    "image-12": 0
+    "image-6": 14,
+    "image-7": 16,
+    "image-8": 12,
+    "image-9": 35,
+    "image-10": 25,
+    "image-11": 25,
+    "image-12": 25
   };
 
   // Get the adjusted yaw value based on the current scene and initial yaw
@@ -325,4 +325,5 @@ viewer.on('viewchange', updateDegreeScale);
 // Function to continuously update the degree scale during auto-rotation
 viewer.on('mousedown', function () {
   setInterval(updateDegreeScale, 100);
+
 });
