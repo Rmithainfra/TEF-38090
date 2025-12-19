@@ -269,8 +269,8 @@ function updateDegreeScale() {
     "image-8": 12,
     "image-9": 35,
     "image-10": 25,
-    "image-11": 25,
-    "image-12": 25
+    "image-11": 24,
+    "image-12": 24
   };
 
   // Get the adjusted yaw value based on the current scene and initial yaw
@@ -327,3 +327,4 @@ viewer.on('mousedown', function () {
   setInterval(updateDegreeScale, 100);
 
 });
+
